@@ -12,6 +12,6 @@ If everything went correctly, you should now have a EXE next to all scripts. <br
 2. Run AeroTerminal.exe
 ### Windows XP/Vista
 1. Install .NET Framework 4.0
-2. Compile AeroTerminal
-3. Install PowerShell 2.0
+2. Install PowerShell 2.0
+3. Compile AeroTerminal
 4. Run AeroTerminal
