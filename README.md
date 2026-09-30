@@ -6,8 +6,6 @@ A lightweight Terminal for Windows XP or above.
 2. Add `csc` to your PATH
 3. Download all scripts in `src`
 4. Inside `src`, run `csc /target:winexe /platform:x86 /out:AeroTerminal.exe Program.cs MainForm.cs TerminalControl.cs SettingsForm.cs Metadata.cs`
-<br>
-If everything went correctly, you should now have a EXE next to all scripts. <br>
 ## How to run
 ### Windows 7+
 1. Compile AeroTerminal
