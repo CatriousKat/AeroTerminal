@@ -1,5 +1,6 @@
 # AeroTerminal
 A lightweight Terminal for Windows XP or above.
+<img src="images/img1.png" alt="AeroTerminal running on Windows 11">
 ## How to compile
 1. Install `csc` on your computer
 2. Add `csc` to your PATH
