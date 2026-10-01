@@ -1,5 +1,5 @@
 # AeroTerminal
-A lightweight Terminal for Windows XP or above.
+A lightweight Terminal for Windows 2000 or above.
 <img src="images/img1.png" alt="AeroTerminal running on Windows 11">
 ## How to compile
 1. Install `csc` on your computer
@@ -10,7 +10,7 @@ A lightweight Terminal for Windows XP or above.
 ### Windows 7+
 1. Compile AeroTerminal
 2. Run `AeroTerminal.exe`
-### Windows XP/Vista
+### Windows 2000/XP/Vista
 1. Install .NET Framework 2.0 or newer
 2. Install PowerShell 1.0 or newer
 3. Compile AeroTerminal
