@@ -113,7 +113,7 @@ namespace AeroTerminal
                     }
                     using (RegistryKey key = Registry.CurrentUser.CreateSubKey(bgShellPath + @"\command"))
                     {
-                        key.SetValue("", "\"" + exePath + "\" \"%V\"");
+                        key.SetValue("", "\"" + exePath + "\" \"%1\"");
                     }
 
                     using (RegistryKey key = Registry.CurrentUser.CreateSubKey(dirShellPath))
@@ -123,7 +123,7 @@ namespace AeroTerminal
                     }
                     using (RegistryKey key = Registry.CurrentUser.CreateSubKey(dirShellPath + @"\command"))
                     {
-                        key.SetValue("", "\"" + exePath + "\" \"%V\"");
+                        key.SetValue("", "\"" + exePath + "\" \"%1\"");
                     }
                 }
                 else

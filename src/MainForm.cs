@@ -15,9 +15,6 @@ namespace AeroTerminal
         private ContextMenuStrip plusMenu;
         private string startDirectory;
 
-        [DllImport("uxtheme.dll", CharSet = CharSet.Unicode)]
-        public static extern int SetWindowTheme(IntPtr hWnd, string pszSubAppName, string pszSubSubName);
-
         public MainForm(string initialDir)
         {
             startDirectory = initialDir ?? Environment.CurrentDirectory;
@@ -70,7 +67,7 @@ namespace AeroTerminal
                     }
                     using (RegistryKey key = Registry.CurrentUser.CreateSubKey(bgShellPath + @"\command"))
                     {
-                        key.SetValue("", "\"" + exePath + "\" \"%V\"");
+                        key.SetValue("", "\"" + exePath + "\" \"%1\"");
                     }
 
                     using (RegistryKey key = Registry.CurrentUser.CreateSubKey(dirShellPath))
@@ -80,7 +77,7 @@ namespace AeroTerminal
                     }
                     using (RegistryKey key = Registry.CurrentUser.CreateSubKey(dirShellPath + @"\command"))
                     {
-                        key.SetValue("", "\"" + exePath + "\" \"%V\"");
+                        key.SetValue("", "\"" + exePath + "\" \"%1\"");
                     }
                 }
                 else
@@ -130,8 +127,6 @@ namespace AeroTerminal
             tabControl.Size = new Size(this.ClientSize.Width - 78, this.ClientSize.Height);
             tabControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tabControl.Padding = new Point(22, 8);
-            
-            try { SetWindowTheme(tabControl.Handle, "Explorer", null); } catch { }
             
             tabControl.DrawMode = TabDrawMode.OwnerDrawFixed;
             tabControl.DrawItem += TabControl_DrawItem;
